@@ -1,0 +1,8 @@
+.slide {
+  display: none;
+  min-height: calc(100% - 140px);
+  min-height: 600px;
+  &.is-active {
+    display: block;
+  }
+}

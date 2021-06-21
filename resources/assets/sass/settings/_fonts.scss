@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'AkkuratStd';
+  src: url('../fonts/AkkuratStd-Regular.eot');
+  src: url('../fonts/AkkuratStd-Regular.woff2') format('woff2'),
+       url('../fonts/AkkuratStd-Regular.woff') format('woff'),
+       url('../fonts/AkkuratStd-Regular.ttf') format('truetype'),
+       url('../fonts/AkkuratStd-Regular.svg#AkkuratStd') format('svg'),
+       url('../fonts/AkkuratStd-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AkkuratStd';
+  src: url('../fonts/AkkuratStd-Bold.eot');
+  src: url('../fonts/AkkuratStd-Bold.woff2') format('woff2'),
+       url('../fonts/AkkuratStd-Bold.woff') format('woff'),
+       url('../fonts/AkkuratStd-Bold.ttf') format('truetype'),
+       url('../fonts/AkkuratStd-Bold.svg#AkkuratStd') format('svg'),
+       url('../fonts/AkkuratStd-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AkkuratStd';
+  src: url('../fonts/AkkuratStd-light.eot');
+  src: url('../fonts/AkkuratStd-light.woff2') format('woff2'),
+       url('../fonts/AkkuratStd-light.woff') format('woff'),
+       url('../fonts/AkkuratStd-light.ttf') format('truetype'),
+       url('../fonts/AkkuratStd-light.svg#AkkuratStd') format('svg'),
+       url('../fonts/AkkuratStd-light.eot?#iefix') format('embedded-opentype');
+  font-weight: 300;
+  font-style: normal;
+}

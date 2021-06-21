@@ -1,0 +1,43 @@
+.button {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  width: 180px;
+  line-height: 40px;
+
+  &--primary {
+    background: $red_violet;
+    border: 1px solid $red_violet;
+    color: #fff;
+    border-radius: 50px;
+    transition: .25s all ease-in-out;
+    &:hover {
+      background: #fff;
+      color: $red_violet;
+      border: 1px solid $red_violet;
+    }
+  }
+  &--secondary {
+    background: #fff;
+    color: $red_violet;
+    width: 180px;
+    line-height: 40px;
+    border-radius: 50px;
+    transition: .25s all ease-in-out;
+    &:hover {
+      background: $red_violet;
+      color: #fff;
+    }
+  }
+  &--outline {
+    background: transparent;
+    border: 1px solid $red_violet;
+    transition: .25s all ease-in-out;
+    &:hover {
+      background: $red_violet;
+    }
+  }
+}

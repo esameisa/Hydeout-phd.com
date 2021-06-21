@@ -1,0 +1,157 @@
+.slide--contact {
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  @media #{$mobile_break_point} {
+    height: auto;
+    padding: 0 15px;
+    .socials__list {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
+  }
+  .go-to-gallery {
+    background: url(../images/svg-sprite/location-btn-artwork.svg) no-repeat;
+    width: 200px;
+    height: 180px;
+    position: fixed;
+    right: -40px;
+    bottom: 0px;
+    @media #{$mobile_break_point} {
+      right: auto;
+      left: -40px;
+      transform: scaleX(-1);
+      width: 180px;
+      height: 155px;
+      left: -41px
+    }
+    a {
+      display: block;
+      padding-left: 70px;
+      padding-top: 100px;
+      max-width: 150px;
+      font-size: 14px;
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: left;
+      @media #{$mobile_break_point} {
+        padding-left: 50px;
+        padding-right: 30px;
+        padding-top: 70px
+      }
+      span {
+        display: block;
+        margin-left: -20px;
+        margin-bottom: 10px;
+        @media #{$mobile_break_point} {
+          transform: scaleX(-1);
+          line-height: 1.5;
+        }
+      }
+      svg {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+  .actions {
+    &__list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    &__item {
+      display: block;
+      @media #{$mobile_break_point} {
+        svg {
+          display: none;
+        }
+      }
+      a {
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+.contact {
+  &__wrapper {
+    max-width: 980px;
+    height: 100%;
+    @media #{$mobile_break_point} {
+      .col {
+        float: none;
+        & + col {
+          margin-top: 50px;
+          margin-bottom: 150px;
+        }
+      }
+    }
+  }
+  &__form {
+    &__title {
+      font-size: 26px;
+      color: $red_violet;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+    &__description {
+      max-width: 400px;
+      font-size: 14px;
+      font-weight: 300;
+      color: $abbey;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+    &__email {
+      color: $thunder;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 50px;
+    }
+    input, textarea {
+      padding: 20px;
+      margin-bottom: 12px;
+      border: 1px solid #ddd;
+      width: 370px;
+      max-width: 370px;
+    }
+    textarea {
+      resize: none;
+      height: 170px;
+      max-height: 170px;
+      @media #{$mobile_break_point} {
+        width: 100%;
+      }
+    }
+    &__submit {
+        button {
+        background: none;
+        border: 1px solid $red_violet;
+        color: $red_violet;
+        border-radius: 50px;
+        width: 200px;
+        line-height: 40px;
+        cursor: pointer;
+        transition: color 0.25s ease-in-out,
+                    background 0.25s ease-in-out;
+        &:hover {
+          background: $red_violet;
+          color: #fff;
+        }
+      }
+    }
+    .button {
+      display: block;
+      border-radius: 0;
+      text-transform: capitalize;
+      border: 2px solid;
+      font-size: 36px;
+      line-height: 70px;
+      margin-bottom: 30px;
+    }
+  }
+}

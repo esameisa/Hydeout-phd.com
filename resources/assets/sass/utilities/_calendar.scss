@@ -1,0 +1,86 @@
+.pignose-calendar {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border: 1px solid #d8d8d8;
+  font-size: 100%;
+  margin: 0 auto;
+  box-shadow: none;
+  border: none;
+  color: $red_violet;
+  font-family: 'AkkuratStd', sans-serif;
+  font-size: 13px;
+  padding: 15px 30px;
+  @media #{$mobile_break_point} {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  & .pignose-calendar-header {
+    font-weight: bold;
+    @media #{$mobile_break_point} {
+      padding: 0;
+    }
+    .pignose-calendar-week.pignose-calendar-week-sun,
+    .pignose-calendar-week.pignose-calendar-week-sat { color: $red_violet;}
+
+  }
+  & .pignose-calendar-top {
+    background-color: #fff;
+    border-bottom: none;
+    box-shadow: none;
+    @media #{$mobile_break_point} {
+      .pignose-calendar-top-nav {
+        &.pignose-calendar-top-next {
+          margin-right: 5px;
+        }
+        &.pignose-calendar-top-prev {
+          margin-left: 5px;
+        }
+      }
+    }
+    .pignose-calendar-top-nav
+    .pignose-calendar-top-icon {
+      color: $red_violet;
+      border: 1px solid $red_violet;
+      border-radius: 50%;
+    }
+    .pignose-calendar-top-month { font-weight: normal; }
+  }
+  & .pignose-calendar-body {
+    @media #{$mobile_break_point} {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .pignose-calendar-unit {
+      position: relative;
+      .pignose-calendar-button-schedule-container {
+        position: absolute;
+        top: 4%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        .pignose-calendar-button-schedule-pin {
+          border: 1px solid $red_violet;
+          width: 100%;
+          height: 100%;
+          background: none !important;
+        }
+      }
+    }
+    .pignose-calendar-unit a { color: $red_violet; }
+    .pignose-calendar-unit.pignose-calendar-unit-active a {
+      background: $red_violet;
+      color: #fff;
+      box-shadow: none;
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+
+
+

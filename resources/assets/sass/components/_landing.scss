@@ -1,0 +1,226 @@
+.page--landing {
+  min-height: 600px;
+  .page-active & {
+    display: none;
+  }
+  height: 100%;
+  text-align: center;
+  background: url(../images/landing-bg.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  .go-down {
+    display: block;
+    margin-top: 25px;
+    background: $red_violet;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+    margin-top: 25px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 28px;
+    transition: .25s background ease-in-out;
+    @media #{$mobile_break_point} {
+      display: none;
+    }
+    &:hover {
+      background: #fff;
+      svg {
+        stroke: $red_violet;
+      }
+    }
+    svg {
+      vertical-align: top;
+      width: 20px;
+      height: 12px;
+      stroke: #fff;
+    }
+  }
+  .show-events{
+    display: block;
+    margin: 0 auto;
+    width: 224px;
+    line-height: 48px;
+    background: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $red_violet;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: .25s all ease-in-out;
+    margin-top: 120px;
+    &:hover {
+      background: $red_violet;
+      color: #fff;
+    }
+  }
+  .hydepark-logo {
+    background: url(../images/svg-sprite/hydepark-logo.svg) no-repeat;
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    left: 30px;
+    top: 30px;
+  }
+  .socials__list {
+    float: right;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    .socials__item {
+      border-color: #fff;
+      background: #fff;
+    }
+    .facebook {
+      svg {
+        fill: $denim;
+      }
+      &:hover {
+        background: $denim;
+        border-color: $denim;
+        svg {
+          fill: #fff
+        }
+      }
+    }
+    .instagram {
+      svg {
+        fill: $red_violet;
+      }
+      &:hover {
+        background: $red_violet;
+        border-color: $red_violet;
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+  }
+  .youtube {
+    border: 2px solid $violet_eggplant;
+    transition: background .25s ease-in-out;
+    margin-left: 5px;
+    svg {
+      width: 14px;
+      height: 14px;
+      fill: $violet_eggplant;
+    }
+    &:hover {
+      background: $violet_eggplant;
+      border-color: $violet_eggplant;
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+}
+.landing__wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  @media #{$mobile_break_point} {
+    background-image: url(../images/landing-bg.jpg);
+    background-size: cover;
+  }
+}
+.landing__actions {
+  position: absolute;
+  left: 50%;
+  bottom: 18%;
+  transform: translateX(-50%);
+  @media #{$mobile_break_point} {
+    bottom: 30%;
+  }
+}
+.landing__logo {
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+  svg {
+    width: 260px;
+    height: 180px;
+  }
+}
+.explore-circle {
+    display: block;
+    background: $red_violet;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -250px;
+    left: -250px;
+    @media #{$mobile_break_point} {
+      width: 250px;
+      height: 250px;
+      bottom: -125px;
+      left: -125px;
+    }
+    cursor: pointer;
+    &.is-active {
+      animation: circle-growth 1.5s ease-in-out;
+      animation-iteration-count: 1;
+    }
+
+   a {
+    text-transform: uppercase;
+    text-decoration: none;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: normal;
+    color: #fff;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    top: 0;
+    bottom: 0;
+    transform: none;
+    right: 0;
+    left: 0;
+    line-height: 160px;
+    padding-left: 200px;
+    @media #{$mobile_break_point} {
+      top: 0;
+      bottom: 0;
+      transform: none;
+      line-height: 140px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      padding-left: 110px;
+      margin: 0;
+    }
+  }
+  svg {
+    width: 20px;
+    height: 12px;
+    position: absolute;
+    top: 110px;
+    right: 116px;
+    @media #{$mobile_break_point} {
+      display: none;
+    }
+  }
+}
+
+// Animations
+@keyframes circle-growth {
+  0% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(15, 15);
+  }
+}
+
+
